@@ -1,4 +1,229 @@
-h1 {
-    color: red;   
-    border: 1px solid red;
+@font-face {
+  font-family: bold;
+  src: url(../fonts/OpenSans-Bold.woff);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: regular;
+  src: url(../fonts/OpenSans-Regular.woff);
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+    margin: 0;
+}
+@media (min-width: 961px) and (max-width: 1920px) {
+    
+.header {
+    width: 1920px;
+    height: 960px;
+    background-image: url(../images/football_1920.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    background-color: #0a0e34;
+    position: relative;
+}
+    .header::after {
+  content: "";
+  background-color: #0a0e34;
+  opacity: 0.9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}    
+.surface_logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 45px;
+    position: relative;
+    z-index: 1;
+    }  
+    .surface_logo_icon {
+    fill: #fff;
+    width: 191px;
+    height: 52px;
+}
+.slogan {
+    font-family: bold, arial, sans-serif;
+    font-size: 90px;
+    color: #ffffff;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 190px;
+} 
+    .slogan_text_one {
+        padding-top: 250px;
+        line-height: 31px;
+        margin-left: 210px;
+    }
+    .slogan_text_two {
+        padding-top: 10px;
+        margin-left: 630px;
+    }
+.button {
+    display: flex;
+    justify-content: center; 
+    position: relative;
+    z-index: 1;
+    
+    }    
+    .button_style {
+        width: 311px;
+        height: 77px;
+        margin-right: 50px;
+        background-color: #5e42b0;
+        border-radius: 40px;
+        border: 0;
+        padding: 0;
+        display: flex;
+        justify-content:
+    }
+    .button_text {
+        margin-left: 29px;
+        margin-top: 20px;
+        text-align: start;
+    }
+    .button_text_bold{
+        font-family: bold, arial, sans-serif;
+        font-size: 14px;
+        color: #ffffff;
+        text-transform: uppercase;
+    }
+    .button_text_regular {
+        font-family: regular, arial, sans-serif;
+        font-size: 14px;
+        color: #ffffff;
+        text-transform: uppercase;
+    }
+    .icon_google {
+        width: 40px;
+        height: 50px;
+        fill: #fff;
+        margin-left: 57px;
+        margin-top: 14px;
+        
+    }
+    .icon_ios {
+        width: 42px;
+        height: 48px;
+        fill: #fff;
+        margin-left: 38px;
+        margin-top: 11px;
+    }
+    
+    .frame {
+        width: 1920px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .img-footballer {
+        position: absolute;
+        padding-top: 25px;
+        padding-left: 397px;
+    }
+    .frame-post {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .frame-title {
+        color: #e7e7e7;
+        font-family: "bold";
+        font-size: 80px;
+        line-height: 60px;
+        text-transform: uppercase;
+        margin-top: 110px;
+        margin-left: 1000px;
+    }
+    .container-frame-1 {
+        height: 158px;
+        padding-left: 1000px;
+        padding-top: 42px;
+    }
+    .container-frame-2 {
+        height: 200px;
+        padding-left: 1000px;
+        padding-top: 42px;
+        
+    }
+/*
+      .container-frame-2::before {
+      content: "";
+      width: 1925px;
+        height: 250px;
+        background-color: #5e42b0;
+        opacity: 0.06;
+                                                                      Не получается задать фоновое изображение бля блока. 
+                                                                      Есть ощущение, что блоки сверстаны неверно, так как мне кажется, что решение с отступом padding-left: 1000px; не верное.
+    }
+*/
+    .container-frame-3 {
+        height: 180px;
+        padding-left: 1000px;
+        padding-top: 42px;
+        background-color: #5e42b0;
+    }
+    .frame-text {
+        display: flex;
+        flex-wrap: nowrap;
+        padding: 0;
+        
+    }
+    .frame_number {
+        width: 19px;
+        height: 14px;
+        color: #000000;
+        font-family: "bold";
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding-right: 14px;
+        
+    }
+    .frame_number::after {
+        content: "";
+        background-color: #5e42b0;
+        position: absolute;
+        border-radius: 2px;
+        width: 19px;
+        height: 5px;
+}
+/*
+        .frame_number::last-child:after {
+        content: "";
+        background-color: #fff;
+        position: absolute;
+        border-radius: 2px;
+        width: 19px;
+        height: 5px;
+}                                                не задается цвет для третьего блока.
+*/
+    .frame-title_h3 {
+        margin: 0;
+        width: 256px;
+        height: 27px;
+        color: #c1c1c1;
+        font-family: "bold";
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 34.49px;
+        text-transform: uppercase;
+        letter-spacing: 1.8px;
+    }
+    .frame-text-p {
+        color: #000000;
+        font-family: "regular";
+        font-size: 20px;
+        padding-top: 29px;
+        margin: 0;
+        width: 710px;
+    }
+
 }
