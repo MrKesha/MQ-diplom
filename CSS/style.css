@@ -11,44 +11,42 @@
   font-style: normal;
 }
 body {
-    margin: 0;
+  margin: 0;
 }
 @media (min-width: 961px) and (max-width: 1920px) {
-    
-.header {
+  .header {
     width: 1920px;
     height: 960px;
     background-image: url(../images/football_1920.jpg);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 100%;
+    background-size: cover;
     background-color: #0a0e34;
     position: relative;
-}
-    .header::after {
-  content: "";
-  background-color: #0a0e34;
-  opacity: 0.9;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}    
-.surface_logo {
+  }
+  .header::after {
+    content: "";
+    background-color: #0a0e34;
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .surface_logo {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     padding-top: 45px;
     position: relative;
     z-index: 1;
-    }  
-    .surface_logo_icon {
+  }
+  .surface_logo_icon {
     fill: #fff;
     width: 191px;
     height: 52px;
-}
-.slogan {
+  }
+  .slogan {
     font-family: bold, arial, sans-serif;
     font-size: 90px;
     color: #ffffff;
@@ -56,174 +54,331 @@ body {
     position: relative;
     z-index: 1;
     margin-bottom: 190px;
-} 
-    .slogan_text_one {
-        padding-top: 250px;
-        line-height: 31px;
-        margin-left: 210px;
-    }
-    .slogan_text_two {
-        padding-top: 10px;
-        margin-left: 630px;
-    }
-.button {
+  }
+  .slogan_text_one {
+    padding-top: 250px;
+    line-height: 31px;
+    margin-left: 210px;
+  }
+  .slogan_text_two {
+    padding-top: 10px;
+    margin-left: 630px;
+  }
+  .button {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     position: relative;
     z-index: 1;
-    
-    }    
-    .button_style {
-        width: 311px;
-        height: 77px;
-        margin-right: 50px;
-        background-color: #5e42b0;
-        border-radius: 40px;
-        border: 0;
-        padding: 0;
-        display: flex;
-        justify-content:
-    }
-    .button_text {
-        margin-left: 29px;
-        margin-top: 20px;
-        text-align: start;
-    }
-    .button_text_bold{
-        font-family: bold, arial, sans-serif;
-        font-size: 14px;
-        color: #ffffff;
-        text-transform: uppercase;
-    }
-    .button_text_regular {
-        font-family: regular, arial, sans-serif;
-        font-size: 14px;
-        color: #ffffff;
-        text-transform: uppercase;
-    }
-    .icon_google {
-        width: 40px;
-        height: 50px;
-        fill: #fff;
-        margin-left: 57px;
-        margin-top: 14px;
-        
-    }
-    .icon_ios {
-        width: 42px;
-        height: 48px;
-        fill: #fff;
-        margin-left: 38px;
-        margin-top: 11px;
-    }
-    
-    .frame {
-        width: 1920px;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-    .img-footballer {
-        position: absolute;
-        padding-top: 25px;
-        padding-left: 397px;
-    }
-    .frame-post {
-        display: flex;
-        flex-direction: column;
-        
-    }
-    .frame-title {
-        color: #e7e7e7;
-        font-family: "bold";
-        font-size: 80px;
-        line-height: 60px;
-        text-transform: uppercase;
-        margin-top: 110px;
-        margin-left: 1000px;
-    }
-    .container-frame-1 {
-        height: 158px;
-        padding-left: 1000px;
-        padding-top: 42px;
-    }
-    .container-frame-2 {
-        height: 200px;
-        padding-left: 1000px;
-        padding-top: 42px;
-        
-    }
-/*
-      .container-frame-2::before {
-      content: "";
-      width: 1925px;
-        height: 250px;
-        background-color: #5e42b0;
-        opacity: 0.06;
-                                                                      Не получается задать фоновое изображение бля блока. 
-                                                                      Есть ощущение, что блоки сверстаны неверно, так как мне кажется, что решение с отступом padding-left: 1000px; не верное.
-    }
-*/
-    .container-frame-3 {
-        height: 180px;
-        padding-left: 1000px;
-        padding-top: 42px;
-        background-color: #5e42b0;
-    }
-    .frame-text {
-        display: flex;
-        flex-wrap: nowrap;
-        padding: 0;
-        
-    }
-    .frame_number {
-        width: 19px;
-        height: 14px;
-        color: #000000;
-        font-family: "bold";
-        font-size: 18px;
-        font-weight: 700;
-        text-transform: uppercase;
-        padding-right: 14px;
-        
-    }
+  }
+  .button_style {
+    width: 311px;
+    height: 77px;
+    margin-right: 50px;
+    background-color: #5e42b0;
+    border-radius: 40px;
+    border: 0;
+    padding: 0;
+    /*        margin-bottom: 110px;*/
+    display: flex;
+  }
+  .button_text {
+    margin-left: 29px;
+    margin-top: 20px;
+    text-align: start;
+  }
+  .button_text_bold {
+    font-family: bold, arial, sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+  .button_text_regular {
+    font-family: regular, arial, sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+  .icon_google {
+    width: 40px;
+    height: 50px;
+    fill: #fff;
+    margin-left: 57px;
+    margin-top: 14px;
+  }
+  .icon_ios {
+    width: 42px;
+    height: 48px;
+    fill: #fff;
+    margin-left: 38px;
+    margin-top: 11px;
+  }
+  .icon_link {
+    text-decoration: none;
+  }
+
+  .frame {
+    width: 1920px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .img-footballer {
+    position: absolute;
+    padding-top: 25px;
+    padding-left: 397px;
+  }
+  .frame-post {
+    display: flex;
+    flex-direction: column;
+  }
+  .frame-title {
+    color: #e7e7e7;
+    font-family: bold, arial, sans-serif;
+    font-size: 80px;
+    line-height: 60px;
+    text-transform: uppercase;
+  }
+  .frame-athlets {
+    margin-top: 110px;
+    margin-left: 1000px;
+  }
+  .container-athlets-1 {
+    height: 158px;
+    padding-left: 1000px;
+    padding-top: 42px;
+  }
+  .container-athlets-2 {
+    height: 200px;
+    padding-left: 1000px;
+    padding-top: 42px;
+    background-color: #f5f4fa;
+  }
+  .container-athlets-3 {
+    height: 180px;
+    padding-left: 1000px;
+    padding-top: 42px;
+    background-color: #5e42b0;
+  }
+  .frame-text {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0;
+  }
+  .frame_number {
+    width: 19px;
+    height: 14px;
+    color: #000000;
+    font-family: bold, arial, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-right: 14px;
+  }
+  .frame_number::after {
+    content: "";
+    background-color: #5e42b0;
+    position: absolute;
+    border-radius: 2px;
+    width: 19px;
+    height: 5px;
+  }
+  /*
     .frame_number::after {
-        content: "";
-        background-color: #5e42b0;
-        position: absolute;
-        border-radius: 2px;
-        width: 19px;
-        height: 5px;
-}
-/*
-        .frame_number::last-child:after {
         content: "";
         background-color: #fff;
         position: absolute;
         border-radius: 2px;
         width: 19px;
         height: 5px;
-}                                                не задается цвет для третьего блока.
+}                                  не получается задать третьему элементу белый фон            
 */
-    .frame-title_h3 {
-        margin: 0;
-        width: 256px;
-        height: 27px;
-        color: #c1c1c1;
-        font-family: "bold";
-        font-size: 36px;
-        font-weight: 700;
-        line-height: 34.49px;
-        text-transform: uppercase;
-        letter-spacing: 1.8px;
+  .frame-title_h3 {
+    margin: 0;
+    width: 256px;
+    height: 27px;
+    color: #c1c1c1;
+    font-family: bold, arial, sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 34.49px;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+  }
+  .frame-text-p {
+    color: #000000;
+    font-family: regular, arial, sans-serif;
+    font-size: 20px;
+    padding-top: 29px;
+    margin: 0;
+    width: 710px;
+  }
+  .frame-text-p_players {
+    color: #fff;
+    font-family: regular, arial, sans-serif;
+    font-size: 20px;
+    padding-top: 29px;
+    margin: 0;
+    width: 710px;
     }
-    .frame-text-p {
-        color: #000000;
-        font-family: "regular";
-        font-size: 20px;
-        padding-top: 29px;
-        margin: 0;
-        width: 710px;
-    }
+  .img-basketballer {
+    position: absolute;
+    padding-top: 25px;
+    padding-left: 810px;
+    width: 991px;
+    height: 815px;
+  }
+  .frame-players {
+    margin-top: 120px;
+    margin-left: 192px;
+  }
+  .container-players-1 {
+    height: 158px;
+    padding-left: 192px;
+    padding-top: 42px;
+  }
+  .container-players-2 {
+    height: 188px;
+    padding-left: 192px;
+    padding-top: 42px;
+    background-color: #f5f5f7;
+  }
+  .container-players-3 {
+    height: 154px;
+    padding-left: 192px;
+    padding-top: 42px;
+    background-color: #0a0e34;
+      
+  }
 
+  .aside_card {
+    width: 1920px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 50%;
+  }
+  .card_name {
+    width: 50%;
+  }
+  .card-title {
+    height: 60px;
+    opacity: 0.4;
+    color: #c1c1c1;
+    font-family: bold, arial, sans-serif;
+    font-size: 80px;
+    line-height: 60px;
+    text-transform: uppercase;
+    padding-left: 125px;
+    padding-top: 150px;
+  }
+  .card-text {
+    width: 580px;
+    height: 54px;
+    color: #000000;
+    font-family: regular, arial, sans-serif;
+    font-size: 24px;
+    padding-left: 125px;
+  }
+  .card_number {
+    width: 25px;
+    color: #f5f6f7;
+    font-family: bold, arial, sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+  .card_number::after {
+    content: "";
+    background-color: #ffffff;
+    opacity: 0.3;
+    position: absolute;
+    border-radius: 2px;
+    width: 24px;
+    height: 5px;
+  }
+  .card_number_box {
+    width: 168px;
+    height: 155px;
+    background-color: #5e42b0;
+    position: absolute;
+    margin-left: 876px;
+    margin-top: 211px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .img {
+    display: block;
+  }
+
+  .footer {
+    width: 1920px;
+    height: 960px;
+    background-image: url(../images/game_1920.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: #0a0e34;
+    position: relative;
+  }
+  .footer::after {
+    content: "";
+    background-color: #0a0e34;
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .footer_logo_box {
+    display: flex;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    padding-top: 230px;
+    padding-bottom: 150px;
+  }
+  .footer_logo {
+    background-color: #5e42b0;
+    border-radius: 28px;
+    width: 130px;
+    height: 137px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 25px;
+  }
+  .footer_logo_icon {
+    fill: #fff;
+    width: 105px;
+    height: 87px;
+    position: relative;
+    z-index: 1;
+  }
+  .footer_text_app {
+    width: 699px;
+    height: 60px;
+    color: #ffffff;
+    font-family: bold, arial, sans-serif;
+    font-size: 80px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  .footer_text {
+    color: #a496ca;
+    font-family: regular, arial, sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+  }
+  .surface_logo_footer {
+    padding-top: 240px;
+  }
+}
+@media (min-width: 641px) and (max-width: 960px) {
+}
+@media (min-width: 640px) {
 }
