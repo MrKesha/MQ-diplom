@@ -13,10 +13,12 @@
 body {
   margin: 0;
 }
-@media (min-width: 961px) and (max-width: 1920px) {
+@media (min-width: 961px) {
   .header {
     width: 1920px;
     height: 960px;
+    margin-left: auto;
+    margin-right: auto;
     background-image: url(../images/football_1920.jpg);
     background-repeat: no-repeat;
     background-position: center center;
@@ -116,6 +118,11 @@ body {
     text-decoration: none;
   }
 
+    section {
+        width: 1920px; 
+        margin-left: auto;
+        margin-right: auto;
+    }
   .frame {
     width: 1920px;
     display: flex;
@@ -159,6 +166,9 @@ body {
     padding-top: 42px;
     background-color: #5e42b0;
   }
+    .container-athlets-3 .frame_number::after {
+        background-color: #fff;
+    } 
   .frame-text {
     display: flex;
     flex-wrap: nowrap;
@@ -166,7 +176,6 @@ body {
   }
   .frame_number {
     width: 19px;
-    height: 14px;
     color: #000000;
     font-family: bold, arial, sans-serif;
     font-size: 18px;
@@ -176,7 +185,6 @@ body {
   }
   .frame_number_three {
     width: 19px;
-    height: 14px;
     color: #fff;
     font-family: bold, arial, sans-serif;
     font-size: 18px;
@@ -192,7 +200,7 @@ body {
     width: 19px;
     height: 5px;
   }
-    .frame_number_three::after {
+  .frame_number_three::after {
     content: "";
     background-color: #5e42b0;
     position: absolute;
@@ -200,17 +208,6 @@ body {
     width: 19px;
     height: 5px;
   }
-/*
-  
-    .frame_number::after {
-        content: "";
-        background-color: #fff;
-        position: absolute;
-        border-radius: 2px;
-        width: 19px;
-        height: 5px;
-}                                  не получается задать третьему элементу белый фон            
-*/
 
   .frame-title_h3 {
     margin: 0;
@@ -275,6 +272,11 @@ body {
     display: flex;
     flex-wrap: wrap;
   }
+    .card_box {
+        width: 1920px;
+        display: flex;
+        
+    }
   .card {
     width: 50%;
   }
@@ -340,6 +342,8 @@ body {
     background-size: cover;
     background-color: #0a0e34;
     position: relative;
+    margin-left: auto;
+    margin-right: auto;
   }
   .footer::after {
     content: "";
