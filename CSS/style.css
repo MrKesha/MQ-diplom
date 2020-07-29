@@ -278,13 +278,16 @@ body {
     .card_box {
         width: 1920px;
         display: flex;
-        
+        position: relative;
     }
   .card {
     width: 50%;
+    position: relative;
+      
   }
   .card_name {
     width: 50%;
+      position: relative;
   }
   .card-title {
     height: 60px;
@@ -325,14 +328,16 @@ body {
     width: 168px;
     height: 155px;
     background-color: #5e42b0;
-    position: absolute;
-/*    margin-left: 876px;*/
-    padding-right: auto;
     margin-top: 211px;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+      position: absolute;
+      right: 0;
+      transform: translateX(+50%);
+      z-index: 1;
+          
+    }
   .img {
     display: block;
   }
@@ -408,7 +413,6 @@ body {
 }
 @media (min-width: 641px) and (max-width: 960px) {
     .header {
-    width: 768px;
     background-image: url(../images/football_1280.jpg);
     background-repeat: no-repeat;
     background-position: center center;
@@ -499,15 +503,8 @@ body {
     margin-top: 16px;
   }
   
-
-    section {
-        width: 768px; 
-        margin-left: auto;
-        margin-right: auto;
-        display: inline-block;
-    }
   .frame {
-    width: 768px;
+/*    width: auto;*/
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -657,20 +654,24 @@ body {
   }
 
   .aside_card {
-    width: 768px;
+/*    width: 768px;*/
     display: flex;
     flex-wrap: wrap;
   }
     .card_box {
-        width: 768px;
+/*        width: 768px;*/
         display: flex;
         flex-wrap: wrap;
+        position: relative;
     }
   .card {
-    width: 768px;
+/*    width: 768px;*/
+    position: relative;
   }
   .card_name {
-    width: 768px;
+/*    width: 768px;*/
+   order: 1;
+      position: relative;
   }
   .card-title {
     opacity: 0.4;
@@ -715,23 +716,34 @@ body {
     background-color: #5e42b0;
     position: absolute;
     margin-left: 33px;
-    margin-top: 504px;
+    bottom: 0;
+      transform: translatey(+30%);
     display: flex;
     align-items: center;
     justify-content: center;
+      z-index: 1;
   }
-    .img_find {
-        order: 2;
+    .card_name .card_number_box {
+        width: 116px;
+        height: 116px;
+        background-color: #5e42b0;
+        position: absolute;
+        margin-left: 33px;
+        top: 0;
+        transform: translatey(-65%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+          z-index: 1;
     }
   .img {
     display: block;
-      width: 768px;
 
   }
 
   .footer {
-    width: 768px;
-    height: 960px;
+    width: 100%;
+      height: 960px;
     background-image: url(../images/game_1280.jpg);
     background-repeat: no-repeat;
     background-position: center center;
@@ -810,4 +822,421 @@ body {
     
 }
 @media (max-width: 640px) {
+      .header {
+    
+    background-image: url(../images/football_767.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: #0a0e34;
+    position: relative;
+  }
+
+  .surface_logo {
+    display: flex;
+    justify-content: center;
+    padding-top: 33px;
+    position: relative;
+    z-index: 1;
+  }
+  .surface_logo_icon {
+    fill: #fff;
+    width: 133px;
+    height: 36px;
+  }
+  .slogan {
+    font-family: bold, arial, sans-serif;
+    font-size: 28px;
+    color: #ffffff;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 190px;
+      
+  }
+  .slogan_text_one {
+    padding-top: 136px;
+    line-height: 31px;
+    margin-left: 20px;
+  }
+  .slogan_text_two {
+    padding-top: 30px;
+    margin-left: 64px;
+    height: 55px;
+  }
+    .button {
+    display: flex;
+    justify-content: center;
+    position: relative;
+        flex-wrap: wrap;
+    z-index: 1;
+    margin-left: 20px;
+    margin-right: 20px;
+        padding-bottom: 80px;
+  }
+  .button_style {
+    width: 280px;
+    height: 35px;
+    background-color: #5e42b0;
+    border-radius: 18px;
+    border: 0;
+    padding: 0;
+    margin-bottom: 14px;
+    display: flex;
+
+  }
+  .button_text {
+    margin-left: 10px;
+    margin-top: 9px;
+    text-align: start;
+  }
+  .button_text_bold {
+    font-family: bold, arial, sans-serif;
+    font-size: 8px;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+  .button_text_regular {
+    font-family: regular, arial, sans-serif;
+    font-size: 8px;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+  .icon_google {
+    width: 22px;
+    height: 24px;
+    fill: #fff;
+    margin-left: 82px;
+    margin-top: 6px;
+  }
+  .icon_ios {
+    width: 20px;
+    height: 24px;
+    fill: #fff;
+    margin-left: 82px;
+    margin-top: 3px;
+  }
+  
+  .frame {
+    display: flex;
+
+    flex-direction: column;
+  }
+  .img-footballer {
+    position: absolute;
+    padding-top: 100px;
+    left: 70px;
+    width: 192px;
+    height: 281px;
+  }
+  .frame-post {
+    display: flex;
+    flex-direction: column;
+      flex-wrap: wrap;
+  }
+  .frame-title {
+    color: #e7e7e7;
+    font-family: bold, arial, sans-serif;
+    font-size: 50px;
+    line-height: 60px;
+    text-transform: uppercase;
+      
+  }
+  .frame-athlets {
+    margin-top: 25px;
+    margin-bottom: 250px;
+    margin-left: 21px;
+  }
+  .container-athlets-1 {
+    height: 130px;
+    padding-left: 21px;
+      padding-top: 83px;
+    background-color: #fafafa;
+    
+  }
+  .container-athlets-2 {
+    height: 241px;
+    padding-left: 21px;
+    padding-top: 60px;
+    background-color: #f5f4f9;
+  }
+  .container-athlets-3 {
+    height: 168px;
+    padding-left: 21px;
+    padding-top: 60px;
+    background-color: #5e42b0;
+    display: block;
+  }
+    .container-athlets-3 .frame_number::after {
+        background-color: #fff;
+    } 
+  .frame-text {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0;
+  }
+  .frame_number {
+    width: 15px;
+    color: #000000;
+    font-family: bold, arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-right: 14px;
+    padding-top: 4px;
+  }
+  .frame_number_three {
+    width: 15px;
+    color: #fff;
+    font-family: bold, arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-right: 14px;
+    padding-top: 4px;
+  }
+  .frame_number::after {
+    content: "";
+    background-color: #5e42b0;
+    position: absolute;
+    border-radius: 2px;
+    width: 16px;
+    height: 4px;
+  }
+  .frame_number_three::after {
+    content: "";
+    background-color: #5e42b0;
+    position: absolute;
+    border-radius: 2px;
+    width: 16px;
+    height: 4px;
+  }
+
+  .frame-title_h3 {
+    margin: 0;
+    padding: 0;
+    width: 209px;
+    height: 18px;
+    color: #c1c1c1;
+    font-family: bold, arial, sans-serif;
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 34.49px;
+    text-transform: uppercase;
+    letter-spacing: 1.15px;
+  }
+  .frame-text-p {
+    color: #000000;
+    font-family: regular, arial, sans-serif;
+    font-size: 15px;
+    padding-top: 27px;
+    line-height: 18px;
+    padding-right: 35px;
+  }
+    .frame-text-p_atlets {
+    color: #fff;
+    font-family: regular, arial, sans-serif;
+    font-size: 15px;
+    padding-top: 27px;
+    line-height: 18px;
+    padding-right: 35px;
+  }
+  .frame-text-p_players {
+    color: #fff;
+    font-family: regular, arial, sans-serif;
+    font-size: 15px;
+    padding-top: 27px;
+    margin: 0;
+    }
+    
+  .img-basketballer {
+    position: absolute;
+    padding-top: 92px;
+    padding-left: 9px;
+    width: 302px;
+height: 248px;
+  }
+  .frame-players {
+    margin-top: 20px;
+    margin-left: 20px;
+      margin-bottom: 190px;
+  }
+  .container-players-1 {
+    height: 168px;
+    padding-left: 21px;
+    padding-top: 83px;
+    background-color: #fafafa;
+  }
+  .container-players-2 {
+    height: 132px;
+    padding-left: 21px;
+    padding-top: 60px;
+    background-color: #f5f4f9;
+  }
+  .container-players-3 {
+    height: 132px;
+    padding-left: 21px;
+    padding-top: 57px;
+    background-color: #090c35;
+      
+  }
+
+  .aside_card {
+    display: flex;
+    flex-wrap: wrap;
+  }
+    .card_box {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+    }
+  .card {
+    position: relative;
+      
+  }
+  .card_name {
+   order: 1;
+      position: relative;
+  }
+  .card-title {
+    color: #c1c1c1;
+    font-family: bold, arial, sans-serif;
+    font-size: 28px;
+    line-height: 35px;
+    text-transform: uppercase;
+    padding-left: 20px;
+    padding-top: 40px;
+      margin: 0;
+  }
+  .card-text {
+    width: 275px;
+    color: #000000;
+    font-family: regular, arial, sans-serif;
+    font-size: 16px;
+    padding-left: 20px;
+      padding-bottom: 77px;
+/*      margin: 0;*/
+  }
+  .card_number {
+    width: 15px;
+    color: #f5f6f7;
+    font-family: bold, arial, sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  .card_number::after {
+    content: "";
+    background-color: #ffffff;
+    opacity: 0.3;
+    position: absolute;
+    border-radius: 2px;
+    width: 15px;
+    height: 4px;
+  }
+  .card_number_box {
+    width: 70px;
+    height: 70px;
+    background-color: #5e42b0;
+    position: absolute;
+    margin-left: 20px;
+    bottom: 0;
+      transform: translatey(+30%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+      z-index: 1;
+  }
+    .card_name .card_number_box {
+        width: 70px;
+        height: 70px;
+        background-color: #5e42b0;
+        position: absolute;
+        margin-left: 20px;
+        top: 0;
+        transform: translatey(-65%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+          z-index: 1;
+    }
+  .img {
+    display: block;
+    width: 100%;
+  }
+
+  .footer {
+    width: 100%;
+    background-image: url(../images/game_767.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: #0a0e34;
+    position: relative;
+  }
+  .footer::after {
+    content: "";
+    background-color: #0a0e34;
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .footer_logo_box {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+    justify-content: center;
+    padding-top: 99px;
+    padding-bottom: 85px;
+  }
+  .footer_logo {
+    background-color: #5e42b0;
+    border-radius: 18px;
+    width: 72px;
+    height: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+      margin-right: 20px;
+      margin-left: 20px; 
+    }
+  .footer_logo_icon {
+    fill: #fff;
+    width: 57px;
+    height: 48px;
+    position: relative;
+    z-index: 1;
+  }
+  .footer_text_app {
+    width: 280px;
+    color: #ffffff;
+    font-family: bold, arial, sans-serif;
+    font-size: 32px;
+    text-transform: uppercase;
+    margin-top: 50px;
+    margin-left: 0;
+    margin-bottom: 0;
+      text-align: center;
+  }
+  .footer_text {
+    color: #9b8ec1;
+    font-family: regular, arial, sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+      text-align: center;
+      margin: 0;
+  }
+/*
+    .button_footer {
+        padding-bottom: 10px;
+    }
+*/
+  .surface_logo_footer {
+    padding-bottom: 10px;
+    
+    }
+    
 }
