@@ -420,7 +420,9 @@ body {
     background-color: #0a0e34;
     position: relative;
   }
-
+    html, body {
+      display: inline-block;
+    }
   .surface_logo {
     display: flex;
     justify-content: center;
@@ -654,7 +656,6 @@ body {
   }
 
   .aside_card {
-/*    width: 768px;*/
     display: flex;
     flex-wrap: wrap;
   }
@@ -742,7 +743,7 @@ body {
   }
 
   .footer {
-    width: 100%;
+   
       height: 960px;
     background-image: url(../images/game_1280.jpg);
     background-repeat: no-repeat;
@@ -764,9 +765,10 @@ body {
   .footer_logo_box {
     display: flex;
     flex-wrap: wrap;
+      flex-direction: column;
     position: relative;
     z-index: 1;
-    justify-content: center;
+      align-items: center;
     padding-top: 126px;
     padding-bottom: 267px;
   }
