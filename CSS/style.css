@@ -12,6 +12,8 @@
 }
 body {
   margin: 0;
+/*  overflow-x: hidden;*/
+
 }
   .header::after {
     content: "";
@@ -28,7 +30,7 @@ body {
   }
 @media (min-width: 961px) {
   .header {
-    width: 1920px;
+      width: 1920px;
     height: 960px;
     margin-left: auto;
     margin-right: auto;
@@ -63,11 +65,11 @@ body {
   .slogan_text_one {
     padding-top: 250px;
     line-height: 31px;
-    margin-left: 210px;
+    margin-left: 11%;
   }
   .slogan_text_two {
     padding-top: 10px;
-    margin-left: 630px;
+    margin-left: 33%;
   }
   .button {
     display: flex;
@@ -78,7 +80,7 @@ body {
   .button_style {
     width: 311px;
     height: 77px;
-    margin-right: 50px;
+    margin-right: 2.6%;
     background-color: #5e42b0;
     border-radius: 40px;
     border: 0;
@@ -122,12 +124,12 @@ body {
   }
 
     section {
-        width: 1920px; 
+    width: 1920px;
         margin-left: auto;
         margin-right: auto;
     }
   .frame {
-    width: 1920px;
+width: 1920px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -150,22 +152,22 @@ body {
   }
   .frame-athlets {
     margin-top: 110px;
-    margin-left: 1000px;
+    margin-left: 52%;
   }
   .container-athlets-1 {
     height: 158px;
-    padding-left: 1000px;
+    padding-left: 52%;
     padding-top: 42px;
   }
   .container-athlets-2 {
     height: 200px;
-    padding-left: 1000px;
+    padding-left: 52%;
     padding-top: 42px;
     background-color: #f5f4fa;
   }
   .container-athlets-3 {
     height: 180px;
-    padding-left: 1000px;
+    padding-left: 52%;
     padding-top: 42px;
     background-color: #5e42b0;
   }
@@ -249,22 +251,22 @@ body {
   }
   .frame-players {
     margin-top: 120px;
-    margin-left: 192px;
+    margin-left: 10%;
   }
   .container-players-1 {
     height: 158px;
-    padding-left: 192px;
+    padding-left: 10%;
     padding-top: 42px;
   }
   .container-players-2 {
     height: 188px;
-    padding-left: 192px;
+    padding-left: 10%;
     padding-top: 42px;
     background-color: #f5f5f7;
   }
   .container-players-3 {
     height: 154px;
-    padding-left: 192px;
+    padding-left: 10%;
     padding-top: 42px;
     background-color: #0a0e34;
       
@@ -274,6 +276,8 @@ body {
     width: 1920px;
     display: flex;
     flex-wrap: wrap;
+      margin-left: auto;
+      margin-right: auto;
   }
     .card_box {
         width: 1920px;
@@ -297,7 +301,7 @@ body {
     font-size: 80px;
     line-height: 60px;
     text-transform: uppercase;
-    padding-left: 125px;
+    padding-left: 13%;
     padding-top: 150px;
   }
   .card-text {
@@ -306,7 +310,7 @@ body {
     color: #000000;
     font-family: regular, arial, sans-serif;
     font-size: 24px;
-    padding-left: 125px;
+    padding-left: 13%;
   }
   .card_number {
     width: 25px;
@@ -343,7 +347,7 @@ body {
   }
 
   .footer {
-    width: 1920px;
+      width: 1920px;
     height: 960px;
     background-image: url(../images/game_1920.jpg);
     background-repeat: no-repeat;
@@ -413,6 +417,8 @@ body {
 }
 @media (min-width: 641px) and (max-width: 960px) {
     .header {
+    margin-left: auto;
+    margin-right: auto;
     background-image: url(../images/football_1280.jpg);
     background-repeat: no-repeat;
     background-position: center center;
@@ -420,9 +426,6 @@ body {
     background-color: #0a0e34;
     position: relative;
   }
-    html, body {
-      display: inline-block;
-    }
   .surface_logo {
     display: flex;
     justify-content: center;
@@ -448,11 +451,11 @@ body {
   .slogan_text_one {
     padding-top: 181px;
     line-height: 31px;
-    margin-left: 90px;
+    padding-left: 9.4%;
   }
   .slogan_text_two {
     padding-top: 30px;
-    margin-left: 195px;
+    padding-left: 20.3%;
     height: 125px;
   }
     .button {
@@ -460,8 +463,8 @@ body {
     justify-content: space-between;
     position: relative;
     z-index: 1;
-    margin-left: 60px;
-    margin-right: 60px;
+    padding-left: 6.25%;
+    padding-right: 6.25%;
   }
   .button_style {
     width: 311px;
@@ -506,7 +509,6 @@ body {
   }
   
   .frame {
-/*    width: auto;*/
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -532,22 +534,22 @@ body {
   .frame-athlets {
     margin-top: 80px;
     margin-bottom: 52px;
-    margin-left: 295px;
+    margin-left: 30.7%;
   }
   .container-athlets-1 {
     height: 130px;
-    padding-left: 295px;
+    padding-left: 30.7%;
     
   }
   .container-athlets-2 {
     height: 240px;
-    padding-left: 295px;
+    padding-left: 30.7%;
     padding-top: 42px;
     background-color: #f5f4fa;
   }
   .container-athlets-3 {
     height: 184px;
-    padding-left: 295px;
+    padding-left: 30.7%;
     padding-top: 42px;
     background-color: #5e42b0;
     display: block;
@@ -567,7 +569,7 @@ body {
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
-    padding-right: 14px;
+    padding-right: 1.5%;
   }
   .frame_number_three {
     width: 19px;
@@ -576,7 +578,7 @@ body {
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
-    padding-right: 14px;
+    padding-right: 1.5%;
   }
   .frame_number::after {
     content: "";
@@ -598,7 +600,6 @@ body {
   .frame-title_h3 {
     margin: 0;
     padding: 0;
-    width: 290px;
     height: 24px;
     color: #c1c1c1;
     font-family: bold, arial, sans-serif;
@@ -614,8 +615,9 @@ body {
     font-size: 16px;
     padding-top: 29px;
     line-height: 28px;
-    padding-right: 35px;
+      margin: 0;
       width: 381px;
+      
   }
   .frame-text-p_players {
     color: #fff;
@@ -629,27 +631,26 @@ body {
     position: absolute;
     padding-top: 145px;
     padding-left: 332px;
-    width: 690px;
-/*height: 600px;*/
+    height: 600px;
   }
   .frame-players {
     margin-top: 120px;
-    margin-left: 32px;
+    margin-left: 3.4%;
   }
   .container-players-1 {
     height: 200px;
-    padding-left: 32px;
+    padding-left: 3.4%;
     padding-top: 42px;
   }
   .container-players-2 {
     height: 185px;
-    padding-left: 32px;
+    padding-left: 3.4%;
     padding-top: 42px;
     background-color: #f5f5f7;
   }
   .container-players-3 {
     height: 183px;
-    padding-left: 32px;
+    padding-left: 3.4%;
     padding-top: 42px;
     background-color: #0a0e34;
       
@@ -660,17 +661,14 @@ body {
     flex-wrap: wrap;
   }
     .card_box {
-/*        width: 768px;*/
         display: flex;
         flex-wrap: wrap;
         position: relative;
     }
   .card {
-/*    width: 768px;*/
     position: relative;
   }
   .card_name {
-/*    width: 768px;*/
    order: 1;
       position: relative;
   }
@@ -681,19 +679,16 @@ body {
     font-size: 80px;
     line-height: 60px;
     text-transform: uppercase;
-    padding-left: 32px;
+    padding-left: 3.4%;
     padding-top: 90px;
       margin: 0;
   }
   .card-text {
-    width: 580px;
-/*    height: 54px;*/
     color: #000000;
     font-family: regular, arial, sans-serif;
     font-size: 24px;
-    padding-left: 32px;
-      padding-bottom: 66px;
-/*      margin: 0;*/
+    padding-left: 3.4%;
+    padding-bottom: 66px;
   }
   .card_number {
     width: 25px;
@@ -716,7 +711,7 @@ body {
     height: 116px;
     background-color: #5e42b0;
     position: absolute;
-    margin-left: 33px;
+    margin-left: 3.4%;
     bottom: 0;
       transform: translatey(+30%);
     display: flex;
@@ -729,7 +724,7 @@ body {
         height: 116px;
         background-color: #5e42b0;
         position: absolute;
-        margin-left: 33px;
+        margin-left: 3.4%;
         top: 0;
         transform: translatey(-65%);
         display: flex;
@@ -739,12 +734,11 @@ body {
     }
   .img {
     display: block;
-
   }
 
   .footer {
    
-      height: 960px;
+    height: 960px;
     background-image: url(../images/game_1280.jpg);
     background-repeat: no-repeat;
     background-position: center center;
@@ -807,25 +801,18 @@ body {
       text-align: center;
       margin: 0;
   }
-    .button_style_footer {
-    width: 311px;
-    height: 77px;
-    background-color: #5e42b0;
-    border-radius: 40px;
-    border: 0;
-    padding: 0;
-    display: flex;
-  }
   .surface_logo_footer {
     padding-bottom: 24px;
       padding: 0;
     }
     
-    
 }
 @media (max-width: 640px) {
-      .header {
+    body {
+        display: block;
+    }
     
+    .header {
     background-image: url(../images/football_767.jpg);
     background-repeat: no-repeat;
     background-position: center center;
@@ -859,11 +846,11 @@ body {
   .slogan_text_one {
     padding-top: 136px;
     line-height: 31px;
-    margin-left: 20px;
+    margin-left: 3.13%;
   }
   .slogan_text_two {
     padding-top: 30px;
-    margin-left: 64px;
+    margin-left: 10%;
     height: 55px;
   }
     .button {
@@ -947,24 +934,24 @@ body {
   .frame-athlets {
     margin-top: 25px;
     margin-bottom: 250px;
-    margin-left: 21px;
+    margin-left: 3.3%;
   }
   .container-athlets-1 {
     height: 130px;
-    padding-left: 21px;
+    padding-left: 3.3%;
       padding-top: 83px;
     background-color: #fafafa;
     
   }
   .container-athlets-2 {
     height: 241px;
-    padding-left: 21px;
+    padding-left: 3.3%;
     padding-top: 60px;
     background-color: #f5f4f9;
   }
   .container-athlets-3 {
     height: 168px;
-    padding-left: 21px;
+    padding-left: 3.3%;
     padding-top: 60px;
     background-color: #5e42b0;
     display: block;
@@ -1033,7 +1020,7 @@ body {
     font-size: 15px;
     padding-top: 27px;
     line-height: 18px;
-    padding-right: 35px;
+    padding-right: 5.5%;
   }
     .frame-text-p_atlets {
     color: #fff;
@@ -1041,7 +1028,7 @@ body {
     font-size: 15px;
     padding-top: 27px;
     line-height: 18px;
-    padding-right: 35px;
+    padding-right: 5.5%;
   }
   .frame-text-p_players {
     color: #fff;
@@ -1060,24 +1047,24 @@ height: 248px;
   }
   .frame-players {
     margin-top: 20px;
-    margin-left: 20px;
+    margin-left: 3.3%;
       margin-bottom: 190px;
   }
   .container-players-1 {
     height: 168px;
-    padding-left: 21px;
+    padding-left: 3.3%;
     padding-top: 83px;
     background-color: #fafafa;
   }
   .container-players-2 {
     height: 132px;
-    padding-left: 21px;
+    padding-left: 3.3%;
     padding-top: 60px;
     background-color: #f5f4f9;
   }
   .container-players-3 {
     height: 132px;
-    padding-left: 21px;
+    padding-left: 3.3%;
     padding-top: 57px;
     background-color: #090c35;
       
@@ -1106,7 +1093,7 @@ height: 248px;
     font-size: 28px;
     line-height: 35px;
     text-transform: uppercase;
-    padding-left: 20px;
+    padding-left: 6.6%;
     padding-top: 40px;
       margin: 0;
   }
@@ -1115,7 +1102,7 @@ height: 248px;
     color: #000000;
     font-family: regular, arial, sans-serif;
     font-size: 16px;
-    padding-left: 20px;
+    padding-left: 6.6%;
       padding-bottom: 77px;
 /*      margin: 0;*/
   }
@@ -1231,11 +1218,6 @@ height: 248px;
       text-align: center;
       margin: 0;
   }
-/*
-    .button_footer {
-        padding-bottom: 10px;
-    }
-*/
   .surface_logo_footer {
     padding-bottom: 10px;
     
