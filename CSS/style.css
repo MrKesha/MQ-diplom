@@ -12,7 +12,7 @@
 }
 body {
   margin: 0;
-/*  overflow-x: hidden;*/
+  overflow-x: hidden;
 
 }
   .header::after {
@@ -30,7 +30,7 @@ body {
   }
 @media (min-width: 961px) {
   .header {
-      width: 1920px;
+      
     height: 960px;
     margin-left: auto;
     margin-right: auto;
@@ -123,21 +123,24 @@ body {
     text-decoration: none;
   }
 
+    
     section {
-    width: 1920px;
+    width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
   .frame {
-width: 1920px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
   }
   .img-footballer {
+      width: 31%;
+      max-width: 31%;
     position: absolute;
     padding-top: 25px;
-    padding-left: 397px;
+    padding-left: 20%;
   }
   .frame-post {
     display: flex;
@@ -232,7 +235,7 @@ width: 1920px;
     font-size: 20px;
     padding-top: 29px;
     margin: 0;
-    width: 710px;
+    width: 610px;
   }
   .frame-text-p_players {
     color: #fff;
@@ -244,10 +247,10 @@ width: 1920px;
     }
   .img-basketballer {
     position: absolute;
-    padding-top: 35px;
-    padding-left: 810px;
-    width: 991px;
-    height: 815px;
+    padding-top: 2%;
+    padding-left: 40%;
+    width: 50%;
+/*    height: 815px;*/
   }
   .frame-players {
     margin-top: 120px;
@@ -273,14 +276,14 @@ width: 1920px;
   }
 
   .aside_card {
-    width: 1920px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
       margin-left: auto;
       margin-right: auto;
   }
     .card_box {
-        width: 1920px;
+       width: 100%;
         display: flex;
         position: relative;
     }
@@ -302,7 +305,9 @@ width: 1920px;
     line-height: 60px;
     text-transform: uppercase;
     padding-left: 13%;
-    padding-top: 150px;
+    padding-top: 28%;
+      padding-bottom: 13%;
+      margin: 0;
   }
   .card-text {
     width: 580px;
@@ -311,6 +316,8 @@ width: 1920px;
     font-family: regular, arial, sans-serif;
     font-size: 24px;
     padding-left: 13%;
+      padding-right: 7%;
+      margin: 0;
   }
   .card_number {
     width: 25px;
@@ -332,7 +339,7 @@ width: 1920px;
     width: 168px;
     height: 155px;
     background-color: #5e42b0;
-    margin-top: 211px;
+    margin-top: 23%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -343,11 +350,12 @@ width: 1920px;
           
     }
   .img {
+      width: 100%;
     display: block;
   }
 
   .footer {
-      width: 1920px;
+      width: 100%;
     height: 960px;
     background-image: url(../images/game_1920.jpg);
     background-repeat: no-repeat;
@@ -395,7 +403,6 @@ width: 1920px;
     z-index: 1;
   }
   .footer_text_app {
-    width: 699px;
     height: 60px;
     color: #ffffff;
     font-family: bold, arial, sans-serif;
@@ -507,7 +514,6 @@ width: 1920px;
     margin-left: 41px;
     margin-top: 16px;
   }
-  
   .frame {
     display: flex;
     flex-wrap: wrap;
@@ -517,7 +523,7 @@ width: 1920px;
     position: absolute;
     padding-top: 95px;
     left: -190px;
-    width: 497px;
+/*    width: 497px;*/
     height: 699px;
   }
   .frame-post {
@@ -534,22 +540,22 @@ width: 1920px;
   .frame-athlets {
     margin-top: 80px;
     margin-bottom: 52px;
-    margin-left: 30.7%;
+    margin-left: 35%;
   }
   .container-athlets-1 {
     height: 130px;
-    padding-left: 30.7%;
+    padding-left: 35%;
     
   }
   .container-athlets-2 {
     height: 240px;
-    padding-left: 30.7%;
+    padding-left: 35%;
     padding-top: 42px;
     background-color: #f5f4fa;
   }
   .container-athlets-3 {
     height: 184px;
-    padding-left: 30.7%;
+    padding-left: 35%;
     padding-top: 42px;
     background-color: #5e42b0;
     display: block;
@@ -629,9 +635,10 @@ width: 1920px;
     }
   .img-basketballer {
     position: absolute;
-    padding-top: 145px;
-    padding-left: 332px;
+    padding-top: 10%;
+
     height: 600px;
+      right: -30%;
   }
   .frame-players {
     margin-top: 120px;
@@ -640,7 +647,7 @@ width: 1920px;
   .container-players-1 {
     height: 200px;
     padding-left: 3.4%;
-    padding-top: 42px;
+/*    padding-top: 42px;*/
   }
   .container-players-2 {
     height: 185px;
@@ -733,6 +740,7 @@ width: 1920px;
           z-index: 1;
     }
   .img {
+      width: 100%;
     display: block;
   }
 
