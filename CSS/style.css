@@ -12,7 +12,7 @@
 }
 body {
   margin: 0;
-  overflow-x: hidden;
+/*  overflow-x: hidden;*/
 
 }
   .header::after {
@@ -29,8 +29,8 @@ body {
     text-decoration: none;
   }
 @media (min-width: 961px) {
-  .header {
-      
+    .header {
+    
     height: 960px;
     margin-left: auto;
     margin-right: auto;
@@ -235,7 +235,7 @@ body {
     font-size: 20px;
     padding-top: 29px;
     margin: 0;
-    width: 610px;
+    width: 510px;
   }
   .frame-text-p_players {
     color: #fff;
@@ -310,7 +310,7 @@ body {
       margin: 0;
   }
   .card-text {
-    width: 580px;
+/*    width: 580px;*/
     height: 54px;
     color: #000000;
     font-family: regular, arial, sans-serif;
@@ -424,6 +424,7 @@ body {
 }
 @media (min-width: 641px) and (max-width: 960px) {
     .header {
+        width: 100vh;
     margin-left: auto;
     margin-right: auto;
     background-image: url(../images/football_1280.jpg);
@@ -523,10 +524,11 @@ body {
     position: absolute;
     padding-top: 95px;
     left: -190px;
-/*    width: 497px;*/
-    height: 699px;
+    width: 497px;
+/*    height: 699px;*/
   }
   .frame-post {
+    width: 100vh;
     display: flex;
     flex-direction: column;
   }
@@ -634,12 +636,14 @@ body {
     width: 420px;
     }
   .img-basketballer {
-    position: absolute;
-    padding-top: 10%;
 
-    height: 600px;
-      right: -30%;
   }
+    .img-basketballer-box {
+        position: absolute;
+     width: 650px;
+       overflow: hidden;
+       transform: translateX(+60%);
+    }
   .frame-players {
     margin-top: 120px;
     margin-left: 3.4%;
@@ -662,10 +666,10 @@ body {
     background-color: #0a0e34;
       
   }
-
   .aside_card {
     display: flex;
     flex-wrap: wrap;
+      
   }
     .card_box {
         display: flex;
@@ -673,6 +677,7 @@ body {
         position: relative;
     }
   .card {
+      width: 100vh;
     position: relative;
   }
   .card_name {
@@ -745,7 +750,7 @@ body {
   }
 
   .footer {
-   
+   width: 100vh;
     height: 960px;
     background-image: url(../images/game_1280.jpg);
     background-repeat: no-repeat;
